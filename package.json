@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.io/Zsenpai/mern/",
+  "homepage": "https://Zsenpai.github.io/mern/",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npm run start --prefix backend"
+    "start": "npm run start --prefix backend",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Zsenpai/mern/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

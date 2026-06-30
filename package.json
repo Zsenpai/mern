@@ -21,6 +21,7 @@
     "url": "https://github.com/Zsenpai/mern/issues"
   },
   "dependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "serverless-http": "^4.0.0"
   }
 }

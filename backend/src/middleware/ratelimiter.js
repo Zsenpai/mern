@@ -8,7 +8,7 @@ const rateLimiter = async (req, res, next) => {
     }
     next();
   } catch (error) {
-    console.erro("Error rate limiter", error);
+    console.error("Error rate limiter", error);
     next(error);
   }
 };

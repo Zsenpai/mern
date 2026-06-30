@@ -25,6 +25,11 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
   });
 }
-app.listen(5001, () => {
-  console.log("server started at port 5001");
-});
+
+export default app;
+
+if (process.env.NETLIFY !== "true") {
+  app.listen(5001, () => {
+    console.log("server started at port 5001");
+  });
+}
